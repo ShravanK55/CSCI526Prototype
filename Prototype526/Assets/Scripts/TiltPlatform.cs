@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using System.Numerics;
+using Vector3 = UnityEngine.Vector3;
 
 public class TiltPlatform : MonoBehaviour {
 

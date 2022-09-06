@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 1925873226565265918}
   - component: {fileID: 2468714030164847400}
   - component: {fileID: -2288163888729724399}
+  - component: {fileID: 2717574810836326490}
   m_Layer: 8
   m_Name: PlayerRBCapsule 1
   m_TagString: Player
@@ -293,6 +294,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 513
   groundedDistance: 0
+--- !u!114 &2717574810836326490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925873226565265906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926ef7ca41b18b940b89324844fb4e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4865726658196991235
 GameObject:
   m_ObjectHideFlags: 0
