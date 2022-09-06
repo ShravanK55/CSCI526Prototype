@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 
@@ -6,6 +7,8 @@ public class TiltPlatform : MonoBehaviour {
     Vector3 playerPosition;
     Vector3 platformCenter;
     Vector3 centerToPlayer;
+    [SerializeField] private float angleLimit = 30.0f;
+    
 
     // Use this for initialization
     void Start () {
@@ -27,7 +30,6 @@ public class TiltPlatform : MonoBehaviour {
 
         //axis of rotation will be in the direction of the centerToPlayer direction
         transform.Rotate(centerToPlayer, centerToPlayer.magnitude * 0.035f); //this is rotating around an axis that is the direction of the vector from the center of the platform to our player. am just using 0.035 degrees because it seemed to be a good rate of rotation. am multiplying by the vector's magnitude so that it tilts more when we get closer to the edges
-        
     }
 
     void OnCollisionExit(Collision collisionInfo) {
